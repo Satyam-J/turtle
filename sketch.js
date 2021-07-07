@@ -26,11 +26,7 @@ function preload(){
     gameover = loadImage("Images/gameover.png")
     sStop = loadAnimation("Images/sandy1.png")
     cStop = loadAnimation("Images/candy1.png")
-    fail = loadSound("Sounds/fail.mp3")
-    hit = loadSound("Sounds/hit.wav")
-    life1 = loadSound("Sounds/life1.mp3")
-    life2 = loadSound("Sounds/life2.mp3")
-    jumppp =loadSound("Sounds/jumppp.mp3")
+    
 }
 
 function setup(){    
@@ -89,10 +85,10 @@ function draw(){
             lifeG.destroyEach()
             liferand = Math.round(random(1,2))
             if(liferand ==1){
-                life1.play()
+                
             }
             if(liferand ==2){
-                life2.play()
+                
             }
 
         }
@@ -110,7 +106,7 @@ function draw(){
             
             if(keyDown("space") && sandy.y >=449){
                 sandy.velocityY = -14
-                jumppp.play()
+                
             }
             sandy.velocityY = sandy.velocityY+0.5
             
@@ -187,7 +183,7 @@ function isTouchingOb(){
             }
             
         }
-        hit.play()
+        
     }else{
         gameState ="gameOver"
         for(var i = 0; i<obGroup.length;i++){
@@ -201,7 +197,7 @@ function isTouchingOb(){
         }
         lifeG.setVelocityXEach(0)
         lifeG.setLifetimeEach(-1)
-        fail.play()
+        
     }
     
     
