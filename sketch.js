@@ -16,16 +16,16 @@ var sStop,cStop
 var fail,hit,life1,life2,jumppp
 var liferand
 function preload(){
-    candyImg = loadAnimation("Images/candy1.png","Images/candy2.png")
-    sandyImg = loadAnimation("Images/sandy1.png","Images/sandy2.png")
-    bg = loadImage("Images/bg.png")
-    ob1 = loadImage("Images/ob1.png")
-    ob2 = loadImage("Images/ob2.png")
-    ob3 = loadImage("Images/ob3.png")
-    lifeImg = loadImage("Images/life.png")
-    gameover = loadImage("Images/gameover.png")
-    sStop = loadAnimation("Images/sandy1.png")
-    cStop = loadAnimation("Images/candy1.png")
+    candyImg = loadAnimation("candy1.png","candy2.png")
+    sandyImg = loadAnimation("sandy1.png","sandy2.png")
+    bg = loadImage("bg.png")
+    ob1 = loadImage("ob1.png")
+    ob2 = loadImage("ob2.png")
+    ob3 = loadImage("ob3.png")
+    lifeImg = loadImage("life.png")
+    gameover = loadImage("gameover.png")
+    sStop = loadAnimation("sandy1.png")
+    cStop = loadAnimation("candy1.png")
     
 }
 
